@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "greetins/v1";
+
+package greetins.v1;
+
+import "greetins/v1/greetins.proto";
+
+service GreetinsService {
+    rpc GreetinUser(GreetinUserRequest) returns (GreetinUserResponse);
+}
+
+message GreetinUserRequest {
+    greetins.v1.User user = 1;
+    string subject = 2;
+}
+
+message GreetinUserResponse {
+    string result = 1;
+}

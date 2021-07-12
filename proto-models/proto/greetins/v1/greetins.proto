@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "greetins/v1";
+
+package greetins.v1;
+
+import "google/protobuf/timestamp.proto";
+
+message User {
+    string prefix = 1;
+    string name = 2;
+    string email = 3;
+    google.protobuf.Timestamp created_at = 5;
+    google.protobuf.Timestamp updated_at = 6;
+}
