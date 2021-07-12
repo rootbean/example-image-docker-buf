@@ -1,5 +1,4 @@
 #Variables - DO NOT CHANGE
-NAME_DIR_PROTO=/temp/proto-models
 DIR_REMOTE=/temp/buf-gen
 
 cd $DIR_REMOTE
